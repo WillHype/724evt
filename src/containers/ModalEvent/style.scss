@@ -1,0 +1,67 @@
+@import "src/colors.scss";
+
+.ModalEvent {
+  font-family: "Manrope", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 450px;
+  position: relative;
+  max-height: 550px;
+  &__imageContainer {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    position: absolute;
+    background-color: $primary;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 334px;
+    top: 280px;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &Label {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    &Periode {
+      font-size: 14px;
+    }
+  }
+  margin-bottom: 32px;
+  &__imageContainer {
+    margin-bottom: 64px;
+  }
+  &__descriptionContainer {
+    text-align: center;
+    padding-left: 64px;
+    padding-right: 64px;
+    p {
+      font-size: 14px;
+    }
+    div {
+      font-size: 16px;
+    }
+  }
+}
+
+
+.ModalEvent::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.ModalEvent::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px; 
+}
+
+
+
